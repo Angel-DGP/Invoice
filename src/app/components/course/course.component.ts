@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../../model/Course';
 import { CourseService } from '../../services/course.service';
+import { StudentDetailsViewComponent } from "../student-details-view/student-details-view.component";
 
 @Component({
   selector: 'app-course',
-  imports: [],
+  imports: [StudentDetailsViewComponent],
   templateUrl: './course.component.html',
 })
 export class CourseComponent implements OnInit {
